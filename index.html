@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Details</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 
-<body>
-    <div class="main-container">
-        <div class="card-container">
-            <div class="image">
-                <img src="https://www.wallpaperflare.com/static/335/587/630/blooming-lotus-flower-selective-focus-photography-wallpaper.jpg"
-                    alt="">
-    
-            </div>
-            <div class="name">
-                <h3>My Name Is</h3>
-            </div>
-            <div class="full-name">
-                <h1>pink pateled flower</h1>
-            </div>
-            <div class="icon-container">
-                <div class="icon">
-                    <img src="./images/user-solid.svg" alt="">
-                </div>
-                <div class="icon">
-                    <img src="./images/./envelope-open-regular.svg" alt="">
-                </div>
-                <div class="icon">
-                    <img src="./images/hand-solid.svg" alt="">
-                </div>
-                <div class="icon">
-                    <img src="./images/phone-solid.svg" alt="">
-                </div>
-                <div class="icon">
-                    <img src="./images/./lock-solid.svg" alt="">
-                </div>
-            </div>
-            <div>
-                <button class="btn"> RANDOM USER </button>
-            </div>
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="img-container">
+          <img
+            src="./../../15-slider/final/images/image1.jpg"
+            class="photo"
+            alt="user image"
+          />
         </div>
-
-
-    </div>
-
-</body>
-
+        <p class="user-title">my name is</p>
+        <p class="user-value">Srikanth racharla</p>
+        <div class="values-list">
+          <!-- single icon -->
+          <button class="icon" data-label="name">
+            <span class="far fa-user"></span>
+          </button>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <button class="icon" data-label="email">
+            <span class="far fa-envelope-open"></span>
+          </button>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <button class="icon" data-label="age">
+            <span class="far fa-calendar-times"></span>
+          </button>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <button class="icon" data-label="street">
+            <span class="far fa-map"></span>
+          </button>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <button class="icon" data-label="phone">
+            <span class="fas fa-phone"></span>
+          </button>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <button class="icon" data-label="password">
+            <span class="fas fa-user-lock"></span>
+          </button>
+          <!-- end of single icon -->
+        </div>
+        <button class="btn" type="button">random user</button>
+      </div>
+    </main>
+    <!-- javascript file -->
+    <script type="module" src="./app.js"></script>
+  </body>
 </html>
